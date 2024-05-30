@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Load initial home content
-    loadContent('view/home.html');
+    loadContent('home.html');
 
     // Add click event listeners to navigation links
     navLinks.forEach(link => {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     cartLink.addEventListener('click', function(event) {
         event.preventDefault();
-        const url = 'view/shopping_cart.html'; 
+        const url = 'shopping_cart.html'; 
         loadContent(url);
     });
 
