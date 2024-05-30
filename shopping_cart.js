@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkout.addEventListener('click', function(event) {
         event.preventDefault();
-        window.location.href = '../view/shipping.html';
+        window.location.href = 'shipping.html';
     });
 });

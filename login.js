@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // if we use button type submit we need to use this 
         // function to prevent sumbit else we can replace submit to normal 'button'.
         event.preventDefault(); 
-        window.location.href = '../../index.html';
+        window.location.href = 'index.html';
     });
     
     forgotPasswordLink.addEventListener('click', function() {
