@@ -1,7 +1,7 @@
 let currentImageIndex = 0;
 const images = [
-    '../images/black_chair.png',
-    '../images/lamp.png',
+    'black_chair.png',
+    'lamp.png',
     
 ];
 

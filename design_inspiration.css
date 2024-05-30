@@ -152,7 +152,7 @@ body {
   align-items: center;
   width: 50%;
   height: 300px;
-  background-image: url("../images/clear_background.png");
+  background-image: url("clear_background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -163,7 +163,7 @@ body {
   align-items: center;
   width: 50%;
   height: 300px;
-  background-image: url("../images/decor.png");
+  background-image: url("decor.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

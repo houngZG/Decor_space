@@ -19,7 +19,7 @@ body {
 
 .left-side {
     background-color: #EFECE7;
-    background-image: url('../../../assets/images/im_bg_login.jpg');
+    background-image: url('im_bg_login.jpg');
     background-position: center;
     background-size: contain;
     flex: 1;
@@ -102,7 +102,7 @@ body {
 
 .right-side {
     background-color: #EAE7D8;
-    background-image: url('../images/bg_login.png');
+    background-image: url('bg_login.png');
     background-position: center top;
     background-size: cover;
     flex: 1;
