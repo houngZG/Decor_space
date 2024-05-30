@@ -1,0 +1,36 @@
+{
+    "data":{
+        "furniture":[
+            {
+                "image":"",
+                "price":"",
+                "discount":"",
+                "product_name":""
+            }
+        ],
+        "office":[
+            {
+                "image":"",
+                "price":"",
+                "discount":"",
+                "product_name":""
+            }
+        ],
+        "kitchen":[
+            {
+                "image":"",
+                "price":"",
+                "discount":"",
+                "product_name":""
+            }
+        ],
+        "livingroom":[
+            {
+                "image":"",
+                "price":"",
+                "discount":"",
+                "product_name":""
+            }
+        ]
+    }
+}
