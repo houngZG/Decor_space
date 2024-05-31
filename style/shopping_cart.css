@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.shopping-cart-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to next line if container is too narrow */
+    padding: 20px;
+}
+
+.cart-details {
+    flex: 1; /* Adjusted flex value */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Added margin bottom for spacing between items */
+}
+
+.cart-details h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-details h1 span {
+    font-weight: normal;
+    color: #6c6c6c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f7f7f7;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+td div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.quantity-button, .cancel-button {
+    background-color: #4A2C2A;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantity-button:hover, .cancel-button:hover {
+    background-color: #6A3C3A;
+}
+
+.order-summary {
+    flex: 1;
+    background-color: #E8D3B9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Added margin bottom for spacing between items */
+}
+
+.order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.apply-button, .checkout-button {
+    background-color: #4A2C2A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px; /* Added margin bottom for spacing between items */
+}
+
+.apply-button:hover, .checkout-button:hover {
+    background-color: #6A3C3A;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .shopping-cart-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    .cart-details {
+        margin-right: 0;
+    }
+
+    .order-summary {
+        margin-top: 20px; /* Add space between cart and summary on small screens */
+    }
+}

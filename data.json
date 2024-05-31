@@ -1,6 +1,6 @@
 {
     "data":{
-        "furniture":[
+        "furnitures":[
             {
                 "image":"",
                 "price":"",
@@ -8,7 +8,7 @@
                 "product_name":""
             }
         ],
-        "office":[
+        "offices":[
             {
                 "image":"",
                 "price":"",
@@ -16,7 +16,7 @@
                 "product_name":""
             }
         ],
-        "kitchen":[
+        "kitchens":[
             {
                 "image":"",
                 "price":"",
@@ -24,7 +24,7 @@
                 "product_name":""
             }
         ],
-        "livingroom":[
+        "livingrooms":[
             {
                 "image":"",
                 "price":"",
