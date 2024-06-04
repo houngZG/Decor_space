@@ -49,7 +49,7 @@ header .login-cart img {
 }
 
 .hero {
-    background-image: url('/images/im_hero.jpg');
+    background-image: url('../images/im_hero.jpg');
     display: flex;
     height: 700px;
     justify-content: space-between;
