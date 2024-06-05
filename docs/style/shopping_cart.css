@@ -8,14 +8,14 @@ body {
 
 .shopping-cart-container {
     display: flex;
-    flex-wrap: wrap; /* Ensure items wrap to next line if container is too narrow */
     padding: 20px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .cart-details {
-    flex: 1; /* Adjusted flex value */
+    flex: 2;
     margin-right: 20px;
-    margin-bottom: 20px; /* Added margin bottom for spacing between items */
 }
 
 .cart-details h1 {
@@ -57,7 +57,7 @@ td div {
     vertical-align: top;
 }
 
-.quantity-button, .cancel-button {
+.quantity-button {
     background-color: #4A2C2A;
     color: #fff;
     border: none;
@@ -65,8 +65,20 @@ td div {
     cursor: pointer;
 }
 
-.quantity-button:hover, .cancel-button:hover {
+.quantity-button:hover {
     background-color: #6A3C3A;
+}
+
+.cancel-button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #cc0000;
 }
 
 .order-summary {
@@ -74,7 +86,6 @@ td div {
     background-color: #E8D3B9;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px; /* Added margin bottom for spacing between items */
 }
 
 .order-summary h2 {
@@ -101,25 +112,37 @@ select, input {
     padding: 10px;
     cursor: pointer;
     width: 100%;
-    margin-bottom: 10px; /* Added margin bottom for spacing between items */
 }
 
 .apply-button:hover, .checkout-button:hover {
     background-color: #6A3C3A;
 }
 
-/* Media Queries for responsiveness */
+.promo-code-input {
+    position: relative;
+}
 
-@media screen and (max-width: 768px) {
-    .shopping-cart-container {
-        flex-direction: column; /* Stack items vertically on small screens */
-    }
-    
-    .cart-details {
-        margin-right: 0;
-    }
+#promoInput {
+    padding-right: 0px;
+}
 
-    .order-summary {
-        margin-top: 20px; /* Add space between cart and summary on small screens */
-    }
+.promo-code-input .fas {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.promo-code-input .fas.fa-check {
+    color: #4CAF50; 
+}
+
+.promo-code-input .fas.fa-times {
+    color: #FF0000; 
+}
+
+.promoMessage {
+    color: #4CAF50; 
+    margin-top: 5px;
 }

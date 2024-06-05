@@ -105,3 +105,12 @@ footer a:hover {
 .payment-icon {
     width: 50px;
 }
+
+.done-button {
+    background-color: #4A2C2A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}

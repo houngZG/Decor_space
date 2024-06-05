@@ -6,11 +6,12 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="../style/shopping_cart.css">
     <link rel="stylesheet" href="../view/shipping.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <main class="shopping-cart-container">
         <section class="cart-details">
-            <h1>Shopping Cart <span>82 Items</span></h1>
+            <h1>Shopping Cart <span>4 Items</span></h1>
             <table>
                 <thead>
                     <tr>
@@ -28,73 +29,21 @@
                                 <p>Gold Coin 20s</p>
                                 <p>Discount: 0%</p>
                                 <p>Shipping: 7.05$</p>
-                                <button class="cancel-button">Cancel Cart</button>
+                                <button type="button" class="btn btn-danger btn-sm">Cancel Cart</button>
                             </div>
                         </td>
                         <td>
-                            <button class="quantity-button">-</button>
-                            <input type="text" value="1">
-                            <button class="quantity-button">+</button>
-                        </td>
-                        <td>$102.00</td>
-                        <td>$102.00</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="../images/coin_gold.png" alt="Gold Coin 20s">
-                            <div>
-                                <p>Gold Coin 20s</p>
-                                <p>Discount: 0%</p>
-                                <p>Shipping: 7.05$</p>
-                                <button class="cancel-button">Cancel Cart</button>
-                            </div>
-                        </td>
-                        <td>
-                            <button class="quantity-button">-</button>
-                            <input type="text" value="1">
-                            <button class="quantity-button">+</button>
-                        </td>
-                        <td>$102.00</td>
-                        <td>$102.00</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="../images/coin_gold.png" alt="Gold Coin 20s">
-                            <div>
-                                <p>Gold Coin 20s</p>
-                                <p>Discount: 0%</p>
-                                <p>Shipping: 7.05$</p>
-                                <button class="cancel-button">Cancel Cart</button>
-                            </div>
-                        </td>
-                        <td>
-                            <button class="quantity-button">-</button>
-                            <input type="text" value="1">
-                            <button class="quantity-button">+</button>
-                        </td>
-                        <td>$102.00</td>
-                        <td>$102.00</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="../images/coin_gold.png" alt="Gold Coin 20s">
-                            <div>
-                                <p>Gold Coin 20s</p>
-                                <p>Discount: 0%</p>
-                                <p>Shipping: 7.05$</p>
-                                <button class="cancel-button">Cancel Cart</button>
-                            </div>
-                        </td>
-                        <td>
-                            <button class="quantity-button">-</button>
-                            <input type="text" value="1">
-                            <button class="quantity-button">+</button>
+                            <button type="button" class="btn btn-danger btn-sm" id="decrease">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                                </svg>
+                            </button>
+                            <input class="form-control" type="text" id="quantity" value="1">
+                            <button type="button" class="btn btn-primary btn-sm" id="increase">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </button>
                         </td>
                         <td>$102.00</td>
                         <td>$102.00</td>
@@ -105,18 +54,32 @@
         
         <aside class="order-summary">
             <h2>Order Summary</h2>
-            <p>82 Items <span>$8,364.00</span></p>
+            <p>4 Items <span>$408</span></p>
             <p>Shipping</p>
-            <select>
-                <option>Standard Delivery - Free</option>
+            <select class="form-select">
+                <option selected>Standard Delivery(motor) - Free</option>
+                <option>Air plane - 10$</option>
+                <option>ship - 5$</option>
+                <option>Bus - 3$</option>
+                <option>Taxi - 2$</option>
+                <option>Lambogini - 50$</option>
             </select>
             <p>Promo Code</p>
-            <input type="text" placeholder="Enter Your Promo Code">
-            <button class="apply-button">APPLY</button>
-            <p>TOTAL COST <span>$8,364.00</span></p>
-            <button class="checkout-button">CHECK OUT</button>
+            <div class="promo-code-input">
+                <input class="form-control" type="text" id="promoInput" placeholder="Enter Your Promo Code">
+                <i class="fas fa-check" style="display: none;"></i>
+                <i class="fas fa-times" style="display: none;"></i>
+            </div>
+            <div class="promoMessage"></div>
+            <br>
+            <button type="button" class="btn btn-md w-100 rounded-0 checkout-button" onclick="applyPromo()">APPLY</button>
+            <div class="promoMessage"></div>
+            <p>TOTAL COST <span class="total"></span></p>
+            <br>
+            <a href="../view/shipping.html">
+                <button class="checkout-button">CHECK OUT</button>
+            </a>
         </aside>
     </main>
-    <script src="../script/shopping_cart.js"></script>
 </body>
 </html>

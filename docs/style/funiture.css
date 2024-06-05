@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+ul.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
 .main_product .title .line {
   margin-top: 5px;
   width: 70px;
@@ -21,18 +40,30 @@
 .main_product .parent-card {
   display: grid;
   max-height: auto;
-  gap: 20px;
+  gap: 40px;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .main_product .parent-card .product-card {
   height: auto;
   box-shadow: 2px 0px 6px rgba(128, 128, 128, 0.394);
+  background-color: transparent;
+  padding: 10px;
 }
 
-.main_product .parent-card .product-card img {
-  max-width: 300px;
-  max-height: 300px;
+.name-card ul .title{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.name-card ul li {
+  font-size: 16px;
+}
+
+.main_product .parent-card .product-card > img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
 }
 
 .star-active {
@@ -60,15 +91,6 @@
   background-color: aliceblue;
 }
 
-.main_product .parent-card .product-card .image-item-list {
-  transition: all 0.3s ease-out;
-}
-
-.main_product .parent-card .product-card .image-item-list:hover {
-  transition: all 0.3s ease-out;
-  transform: scale(1.3);
-}
-
 .main_product .card-arrive-product {
   position: relative;
 }
@@ -87,7 +109,7 @@
 .main_product .container .card-arrive-product .arrive-product .wraper-text {
   background-color: rgba(146, 166, 160, 0.398);
   max-height: 40px;
-  max-width: 110px;
+  max-width: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +154,7 @@
 .main_product .collection-product .container .child-image img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.201);
   transition: transform 0.3s ease-in-out;
@@ -150,11 +172,17 @@
       .main_product .parent-card {
         display: grid;
         max-height: auto;
-        gap: 10px;
+        gap: 20px;
         grid-template-columns: repeat(3, 1fr);
       }
-      .name-card {
-        padding: 0;
+      
+      .name-card ul .title{
+        font-size: 18px;
+        font-weight: 600;
+      }
+    
+      .name-card ul li {
+        font-size: 18px;
       }
 }
 
@@ -166,11 +194,17 @@
   .main_product .parent-card {
     display: grid;
     max-height: auto;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
-  .name-card {
-    padding: 0;
+  
+  .name-card ul .title{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .name-card ul li {
+    font-size: 14px;
   }
 }
 
@@ -179,7 +213,7 @@
   .main_product .parent-card {
     display: grid;
     max-height: auto;
-    gap: 10px;
+    gap: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -188,11 +222,13 @@
     max-height: 150px;
     object-fit: contain;
   }
-  .name-card {
-    padding: 0;
+
+  .name-card ul .title{
+    font-size: 14px;
+    font-weight: 600;
   }
 
-  .name-card strong {
+  .name-card ul li {
     font-size: 14px;
   }
 
@@ -201,8 +237,31 @@
     left: 10px;
     bottom: 10px;
   }
+
+  .main_product .container .card-arrive-product .arrive-product .quote-card {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
   .main_product .collection-product .title h3 {
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  .main_product .container .card-arrive-product .arrive-product .wraper-text {
+    background-color: rgba(146, 166, 160, 0.398);
+    max-height: 30px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .main_product .container .card-arrive-product .arrive-product .wraper-text > p {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 12px;
   }
 }
 
@@ -240,7 +299,7 @@
   .main_product .parent-card {
     display: grid;
     max-height: auto;
-    gap: 10px;
+    gap: 15px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -250,17 +309,18 @@
     object-fit: contain;
   }
 
-  .name-card {
-    padding: 0;
+  .name-card ul .title{
+    font-size: 12px;
+    font-weight: 600;
   }
 
-  .name-card strong {
-    font-size: 14px;
+  .name-card ul li {
+    font-size: 12px;
   }
 
   .main_product .container .card-arrive-product .arrive-product {
     position: absolute;
-    left: 5px;
-    bottom: 5px;
+    left: 10px;
+    bottom: 10px;
   }
 }
