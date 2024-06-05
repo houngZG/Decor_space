@@ -19,7 +19,7 @@ body {
 
 .left-side {
     background-color: #e0e0e0;
-    background-image: url('../images/vase_plant.png');
+    background-image: url('../../docs/assets/images/vase_plant.png');
     background-size: cover;
     background-blend-mode: lighten;
     background-position-x: 0;

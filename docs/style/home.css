@@ -70,7 +70,7 @@ head #dropdown-men{
 }
 
 .hero {
-    background-image: url('/images/im_hero.jpg');
+    background-image: url('../assets/images/im_hero.jpg');
     display: flex;
     height: 700px;
     justify-content: space-between;

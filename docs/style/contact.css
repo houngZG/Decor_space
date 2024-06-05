@@ -75,7 +75,7 @@ button:hover {
 
 .illustration {
     flex: 1;
-    background-image: url('../images/contact_us_image.png');
+    background-image: url('../../docs/assets/images/contact_us_image.png');
     background-size: cover;
     display: flex;
 }
