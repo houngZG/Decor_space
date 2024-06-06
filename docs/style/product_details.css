@@ -11,6 +11,19 @@ body {
     background-color: #EAE7D8;
 }
 
+.alert{
+    position: absolute;
+    z-index: 99;
+    padding-right: 30px;
+    top: 10%;
+    right: -400px;
+    transition: all 0.6s ease-in-out;
+}
+
+.alert #message{
+    color: whitesmoke;
+}
+
 .product-image {
     position: relative;
     max-width: 50%;
