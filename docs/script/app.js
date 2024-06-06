@@ -1,6 +1,4 @@
 let isOpen = false;
-const submenu = document.getElementById("sub-menu");
-const parent = document.querySelector(".parent-submenu");
 localStorage.getItem('getItems');
 
 function toggleMoreText() {
@@ -63,11 +61,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
     loadContent('view/home.html');
 
+    function setInitialNavSelection() {
+        const firstNavLink = document.querySelector('nav ul li a');
+        if (firstNavLink) {
+            firstNavLink.classList.add('selected-nav');
+        }
+    }
+    setInitialNavSelection();
+
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();
             const url = event.target.getAttribute('href');
             console.log("url: " + url);
+
+            // Remove the selected class from all links
+            navLinks.forEach(navLink => {
+                navLink.classList.remove('selected-nav');
+            });
+
+            // Add the selected class to the clicked link
+            //link.classList.add('selected-nav');
+            // we can use link. or event.target as well.
+            event.target.classList.add('selected-nav');
+
             let scriptUrl;
             if (url === './view/furniture.html') {
                 scriptUrl = 'script/furniture.js';
@@ -213,6 +230,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 async function subMenu() {
+    const submenu = document.getElementById("sub-menu");
+    const parent = document.querySelector(".parent-submenu");
+
     if (!submenu) {
         console.error('Error: #sub-menu element not found');
         return;

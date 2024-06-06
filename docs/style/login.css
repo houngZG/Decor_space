@@ -19,9 +19,6 @@ body {
 
 .left-side {
     background-color: #EFECE7;
-    background-image: url('../assets/images/bg_login.png');
-    background-position: center;
-    background-size: contain;
     flex: 1;
     padding: 40px;
     text-align: center;
@@ -94,7 +91,7 @@ body {
 }
 
 .forgot-password {
-    color: #4a4a4a;
+    color: #ea0f0f;
     text-decoration: none;
     font-size: 0.9em;
     text-align: right;
@@ -120,7 +117,7 @@ body {
 }
 
 .right-side p {
-    font-size: 1em;
+    font-size: 18px;
     margin-bottom: 20px;
     color: #4a4a4a;
 }

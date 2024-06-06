@@ -76,3 +76,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+let coutData = 0;
+
+function coutItem({ isClicked = false }) {
+    const cout = document.querySelector(".items-count");
+    if (isClicked) {
+        coutData += 1;
+        console.log(coutData);
+        if (cout) {
+            cout.innerText = coutData;
+        } else {
+            console.error('Element with ID "itemsCount" not found');
+        }
+        console.log(coutData);
+    }
+}
+
+window.coutItem = coutItem;

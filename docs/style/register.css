@@ -18,8 +18,7 @@ body {
 }
 
 .left-side {
-    background-color: #e0e0e0;
-    background-image: url('../../docs/assets/images/vase_plant.png');
+    background-image: url('../assets/images/bg_login.png');
     background-size: cover;
     background-blend-mode: lighten;
     background-position-x: 0;
@@ -34,7 +33,7 @@ body {
 
 .left-side .logo {
     width: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 .left-side h1 {
@@ -61,7 +60,7 @@ body {
 }
 
 .right-side {
-    background-color: #EFECE7;
+    background-color: #F5F5F5;
     flex: 1;
     padding: 40px;
 }

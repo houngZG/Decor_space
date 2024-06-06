@@ -57,9 +57,9 @@ header {
 }
 
 header .logo {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
-  color: #fff;
+  color: #4e0bad;
 }
 
 header nav ul {
@@ -197,4 +197,12 @@ footer {
   .footer-bottom p {
     font-size: 11px;
   }
+}
+
+.selected-nav {
+  text-decoration-color: #a88768;
+  text-decoration: underline;
+  text-decoration-thickness: 6px; 
+  text-decoration-color: #3F2305;
+  color: #3F2305;
 }
