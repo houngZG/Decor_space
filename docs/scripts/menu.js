@@ -1,3 +1,4 @@
+import ShoppingCardScript from "./shopping_cart.js";
 class Menu {
     constructor(card) {
         this.isOpen = false;
@@ -84,12 +85,14 @@ class Menu {
 
     setCounter({ isCount = false }) {
         const waitForHtmlResponse = setInterval(() => {
+            const item = new ShoppingCardScript();
             const cardCounter = document.querySelector("#card-counter");
             if (isCount) {
                 clearInterval(waitForHtmlResponse);
 
                 var count = parseInt(cardCounter.innerText || 0);
                 count++;
+                item.shippingCardItem(count);
                 cardCounter.innerText = count; 
                 console.log(count);
             } else {

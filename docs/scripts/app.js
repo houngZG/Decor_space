@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
             if (url === './view/furniture.html') {
                 scriptUrl = './script/furniture.js';
             } else if (url === './view/product_details.html') {
-                scriptUrl = './script/product_details.js';
+                scriptUrl = './scripts/product_details.js';
             } else if (url === './view/shopping_cart.html') {
-                scriptUrl = './script/shopping_cart.js';
+                scriptUrl = './scripts/shopping_cart.js';
             }
 
             contentLoader.loadContent(url, scriptUrl);
@@ -42,8 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (cartLink) {
         cartLink.addEventListener('click', function (event) {
             event.preventDefault();
-            const url = 'view/shopping_cart.html';
-            contentLoader.loadContent(url);
+            const url = './view/shopping_cart.html';
+            const scriptUrl = './scripts/shopping_cart.js';
+            contentLoader.loadContent(url, scriptUrl);
         });
     }
 

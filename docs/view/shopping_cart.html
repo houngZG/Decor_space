@@ -7,49 +7,13 @@
     <link rel="stylesheet" href="./style/shopping_cart.css">
     <link rel="stylesheet" href="./view/shipping.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="../script/shopping_cart.js"></script>
 </head>
 <body>
     <main class="shopping-cart-container">
         <section class="cart-details">
-            <h1 class="items-count" id="items-count">Shopping Cart <span> Items</span></h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product Details</th>
-                        <th>Quantity</th>
-                        <th>Prices</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="./assets/images/coin_gold.png" alt="Gold Coin 20s">
-                            <div>
-                                <p>Gold Coin 20s</p>
-                                <p>Discount: 0%</p>
-                                <p>Shipping: 7.05$</p>
-                                <button type="button" class="btn btn-danger btn-sm">Cancel Cart</button>
-                            </div>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-danger btn-sm" id="decrease">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
-                                </svg>
-                            </button>
-                            <input class="form-control" type="text" id="quantity" value="1">
-                            <button type="button" class="btn btn-primary btn-sm" id="increase">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                                </svg>
-                            </button>
-                        </td>
-                        <td>$102.00</td>
-                        <td>$102.00</td>
-                    </tr>
-                </tbody>
+            <h1 class="items-count" id="items-count"></h1>
+            <table class="table" id="table-lsit-down-card">
+                
             </table>
         </section>
         
