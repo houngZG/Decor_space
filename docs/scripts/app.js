@@ -1,12 +1,11 @@
-import ContentLoader from '../scripts/content_loader.js';
+import ContentLoader from './content_loader.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav ul li a');
     const cartLink = document.querySelector('a[href="#"]');
-    const contentContainer = document.getElementById('content');
-    const contentLoader = new ContentLoader(contentContainer);
+    const contentLoader = new ContentLoader();
     contentLoader.loadContent('./view/home.html', '');
-    
+
     function setInitialNavSelection() {
         const firstNavLink = document.querySelector('nav ul li a');
         if (firstNavLink) {

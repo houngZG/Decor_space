@@ -1,4 +1,4 @@
-localStorage.getItem("shopping");
+import ContentLoader from "./content_loader.js";
 
 class ShoppingCardScript {
     constructor() {
@@ -6,7 +6,7 @@ class ShoppingCardScript {
     }
 
     init() {
-        // this.quantityChange();
+        this.checkOut();
     }
 
     readAndWriteCard(product) {
@@ -15,6 +15,8 @@ class ShoppingCardScript {
         this.quantityChange(prd.price);
         const elementWaiting = setInterval(() => {
             const data = document.querySelector(".table");
+            const text = document.getElementById("data-available");
+            const totalMoney = document.getElementById("total-money");
             var productHTML = '';
 
             if (data) {
@@ -23,7 +25,7 @@ class ShoppingCardScript {
                 productHTML = `
                     <thead>
                         <tr>
-                            <th>Product Details</th>
+                            <th colspan="2">Product Details</th>
                             <th>Quantity</th>
                             <th>Prices</th>
                             <th>Total</th>
@@ -33,13 +35,15 @@ class ShoppingCardScript {
                         <tr>
                             <td>
                                 <img src="${prd.image}" alt="${prd.product_name}">
+                            </td>
+                            <th>
                                 <div>
                                     <p>${prd.product_name}</p>
                                     <p>Discount: ${prd.discount}</p>
                                     <p>Shipping: ${prd.price}</p>
                                     <button type="button" class="btn btn-danger btn-sm">Cancel Cart</button>
                                 </div>
-                            </td>
+                            </th>
                             <td>
                                 <button type="button" class="btn btn-danger btn-sm" id="decrease">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
@@ -60,6 +64,9 @@ class ShoppingCardScript {
                 `;
 
                 data.innerHTML = productHTML;
+                text.innerText = "Data is available.";
+                totalMoney.innerText = `$ ${prd.price}`;
+                text.style.color = "black";
 
             } else {
                 // console.error(`element is ${data}`);
@@ -106,12 +113,15 @@ class ShoppingCardScript {
     updateTotal(price, currentValue) {
         const setTotalElement = setInterval(() => {
             const total = document.getElementById("total");
+            const totalMoney = document.getElementById("total-money");
             var t = 0;
-            if(total){
+            if (total && totalMoney) {
                 clearInterval(setTotalElement);
 
                 t = price * currentValue;
-                total.innerText = "$"+t;
+                total.innerText = "$" + t;
+                totalMoney.innerText = `$ ${t}.00`;
+                console.log("totalMoney" +totalMoney);
             }
         }, 500);
     }
@@ -119,12 +129,30 @@ class ShoppingCardScript {
     shippingCardItem(index) {
         const waitElemet = setInterval(() => {
             const shipping = document.getElementById("items-count");
+            const valueOfItem = document.getElementById("value-of-item");
 
             if (shipping) {
                 clearInterval(waitElemet);
-                return shipping.innerText = `Shopping card ${index} ${index > 1 ? 'items' : 'item'}`;
+                shipping.innerText = `Shopping card ${index} ${index > 1 ? 'items' : 'item'}`;
+                valueOfItem.innerText = `${index} ${index > 1 ? 'items' : 'item'}`;
             }
         });
+    }
+
+    checkOut() {
+        const waitElement = setInterval(() => {
+            const checkOut = document.getElementById('check-out');
+            const contentLoader = new ContentLoader();
+            if (checkOut) {
+                clearInterval(waitElement);
+
+                checkOut.addEventListener('click', () => {
+                    const url = './view/shipping.html';
+                    const scriptUrl = './scripts/shipping.js';
+                    contentLoader.loadContent(url, scriptUrl);
+                });
+            }
+        }, 300);
     }
 }
 

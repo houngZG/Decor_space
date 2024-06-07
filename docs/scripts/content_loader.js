@@ -1,11 +1,7 @@
 import ProductDetailScript from "./product_details.js";
 
 class ContentLoader {
-    constructor(contentContainer) {
-        if (!contentContainer) {
-            throw new Error('A valid content container must be provided.');
-        }
-        this.contentContainer = contentContainer;
+    constructor() {
         this.json = "./data.json";
         this.lengthData = 0;
         this.startItem = 0;
@@ -14,21 +10,28 @@ class ContentLoader {
 
 
     loadContent(url, scriptUrl) {
-        fetch(url)
-            .then(response => response.text())
-            .then(data => {
-                this.contentContainer.innerHTML = data;
-                if (scriptUrl) {
-                    this.loadScript(scriptUrl, () => {
-                        if (url.includes('furniture.html')) {
-                            this.fetchData();
-                            this.clickTile();
-                            this.clickPage();
-                        }
-                    });
-                }
-            })
-            .catch(error => console.error('Error fetching content:', error));
+        const watingHTML = setInterval(() => {
+            const contentContainer = document.getElementById('content');
+            if(contentContainer){
+                clearInterval(watingHTML);
+
+                fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    contentContainer.innerHTML = data;
+                    if (scriptUrl) {
+                        this.loadScript(scriptUrl, () => {
+                            if (url.includes('furniture.html')) {
+                                this.fetchData();
+                                this.clickTile();
+                                this.clickPage();
+                            }
+                        });
+                    }
+                })
+                .catch(error => console.error('Error fetching content:', error));
+            }
+        }, 100);
     }
 
     loadScript(scriptUrl, callback) {
@@ -142,6 +145,7 @@ class ContentLoader {
     }
 }
 
+new ContentLoader();
 export default ContentLoader;
 
 

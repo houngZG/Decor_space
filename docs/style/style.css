@@ -7,6 +7,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  overflow-x: hidden;
 }
 h1 {
   font-family: "Libre Bodoni", serif;

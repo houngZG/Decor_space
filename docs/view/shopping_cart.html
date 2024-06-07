@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="./style/shopping_cart.css">
-    <link rel="stylesheet" href="./view/shipping.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <main class="shopping-cart-container">
         <section class="cart-details">
-            <h1 class="items-count" id="items-count"></h1>
-            <table class="table" id="table-lsit-down-card">
-                
-            </table>
+            <div class="main-table text-center">
+                <h1 class="items-count text-start" id="items-count">Shopping card 0 item</h1>
+                <table class="table" id="table-lsit-down-card">
+                </table>    
+                <strong id="data-available">No data available!</strong>
+            </div>
         </section>
         
         <aside class="order-summary">
             <h2>Order Summary</h2>
-            <p>4 Items <span>$408</span></p>
+            <div class="d-flex justify-content-between w-100">
+                <p id="value-of-item"></p>
+                <p id="total-money"></p>
+            </div>
             <p>Shipping</p>
             <select class="form-select">
                 <option selected>Standard Delivery(motor) - Free</option>
@@ -41,9 +45,7 @@
             <div class="promoMessage"></div>
             <p>TOTAL COST <span class="total"></span></p>
             <br>
-            <a href="../view/shipping.html">
-                <button class="checkout-button">CHECK OUT</button>
-            </a>
+            <button class="checkout-button" id="check-out">CHECK OUT</button>
         </aside>
     </main>
 </body>
