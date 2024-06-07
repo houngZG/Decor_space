@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="./style/shopping_cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/shopping_cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrpper" id="main-wrpper">
+      <div class="warning" id="warning">
+        <div class="loader" id="loader">
+          <label>Please wait...</label>
+          <div class="loading"></div>
+        </div>
+        <div class="card" id="card">
+          <div class="header">
+            <div class="image">
+              <svg
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="content">
+              <span class="title">No data for check out!</span>
+              <p class="message">
+                Please make sure you have ordered the product before going to
+                check out. I recommend you have at least one product for
+                checkout.
+              </p>
+            </div>
+            <div class="actions">
+              <button class="desactivate" type="button">Order Now</button>
+              <button class="cancel" type="button" id="is-cancel">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="shopping-cart-container">
-        <section class="cart-details">
-            <div class="main-table text-center">
-                <h1 class="items-count text-start" id="items-count">Shopping card 0 item</h1>
-                <table class="table" id="table-lsit-down-card">
-                </table>    
-                <strong id="data-available">No data available!</strong>
-            </div>
-        </section>
-        
-        <aside class="order-summary">
-            <h2>Order Summary</h2>
-            <div class="d-flex justify-content-between w-100">
-                <p id="value-of-item"></p>
-                <p id="total-money"></p>
-            </div>
-            <p>Shipping</p>
-            <select class="form-select">
-                <option selected>Standard Delivery(motor) - Free</option>
-                <option>Air plane - 10$</option>
-                <option>ship - 5$</option>
-                <option>Bus - 3$</option>
-                <option>Taxi - 2$</option>
-                <option>Lambogini - 50$</option>
-            </select>
-            <p>Promo Code</p>
-            <div class="promo-code-input">
-                <input class="form-control" type="text" id="promoInput" placeholder="Enter Your Promo Code">
-                <i class="fas fa-check" style="display: none;"></i>
-                <i class="fas fa-times" style="display: none;"></i>
-            </div>
-            <div class="promoMessage"></div>
-            <br>
-            <button type="button" class="btn btn-md w-100 rounded-0 checkout-button" onclick="applyPromo()">APPLY</button>
-            <div class="promoMessage"></div>
-            <p>TOTAL COST <span class="total"></span></p>
-            <br>
-            <button class="checkout-button" id="check-out">CHECK OUT</button>
-        </aside>
+      <section class="cart-details">
+        <div class="main-table text-center">
+          <h1 class="items-count text-start" id="items-count">
+            Shopping card 0 item
+          </h1>
+          <table class="table" id="table-lsit-down-card"></table>
+          <strong id="data-available">No data available!</strong>
+        </div>
+      </section>
+
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="d-flex justify-content-between w-100">
+          <p id="value-of-item"></p>
+          <p id="total-money"></p>
+        </div>
+        <p>Shipping</p>
+        <select class="form-select" id="delivery-method">
+          <option value="" id="selected-value">Choose deliver method</option>
+          <option value="Standard Delivery(motor) - Free">
+            Standard Delivery(motor) - Free
+          </option>
+          <option value="Air plane - 10$">Air plane - 10$</option>
+          <option value="Ship - 5$">Ship - 5$</option>
+          <option value="Bus - 3$">Bus - 3$</option>
+          <option value="Taxi - 2$">Taxi - 2$</option>
+          <option value="Lambogini - 50$">Lambogini - 50$</option>
+        </select>
+        <p>Promo Code</p>
+        <div class="promo-code-input">
+          <input
+            class="form-control"
+            type="text"
+            id="promoInput"
+            placeholder="Enter Your Promo Code"
+          />
+          <i class="fas fa-check" style="display: none"></i>
+          <i class="fas fa-times" style="display: none"></i>
+        </div>
+        <div class="promoMessage"></div>
+        <br />
+        <button
+          type="button"
+          class="btn btn-md w-100 rounded-0 checkout-button"
+          onclick="applyPromo()"
+        >
+          APPLY
+        </button>
+        <div class="promoMessage"></div>
+        <p>TOTAL COST <span class="total"></span></p>
+        <br />
+        <button class="checkout-button" id="check-out">CHECK OUT</button>
+      </aside>
     </main>
-</body>
+  </body>
 </html>

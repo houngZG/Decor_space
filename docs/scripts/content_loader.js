@@ -5,7 +5,7 @@ class ContentLoader {
         this.json = "./data.json";
         this.lengthData = 0;
         this.startItem = 0;
-        this.end = 8;
+        this.endItem = 8;
     }
 
 
@@ -37,6 +37,7 @@ class ContentLoader {
     loadScript(scriptUrl, callback) {
         const script = document.createElement('script');
         script.src = scriptUrl;
+        script.type = 'module';
         script.onload = callback;
         script.onerror = () => console.error(`Error loading script: ${scriptUrl}`);
         document.head.appendChild(script);
@@ -129,7 +130,7 @@ class ContentLoader {
         const minusPagination = document.getElementById('minus-pagination');
         if (plusPagination) {
             plusPagination.addEventListener('click', () => {
-                doPagination(true);
+                this.doPagination(true);
             });
         } else {
             console.error('Element plusPagination not found');
@@ -137,15 +138,34 @@ class ContentLoader {
 
         if (minusPagination) {
             minusPagination.addEventListener('click', () => {
-                doPagination(false);
+                this.doPagination(false);
             });
         } else {
             console.error('Element minusPagination not found');
         }
     }
+
+    doPagination(isPlus = false) {
+        console.log(isPlus);
+        if (isPlus === true) {
+            if (this.endItem >= this.lengthData) {
+                return console.log("invalid value for plus");
+            } else {
+                this.startItem += 8;
+                this.endItem += 8;
+            }
+        } else {
+            if (this.startItem <= 0) {
+                return console.log("invalid value for minus");
+            } else {
+                this.startItem -= 8;
+                this.endItem -= 8;
+            }
+        }
+        this.fetchData(this.startItem, this.endItem);
+    }
 }
 
-new ContentLoader();
 export default ContentLoader;
 
 

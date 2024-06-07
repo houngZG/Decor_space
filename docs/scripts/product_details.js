@@ -1,5 +1,6 @@
 import Menu from "./menu.js";
 import ShoppingCardScript from "./shopping_cart.js";
+import ContentLoader from "./content_loader.js";
 
 class ProductDetailScript {
     constructor(prodetaiL) {
@@ -10,7 +11,7 @@ class ProductDetailScript {
     renderProductDetails(item) {
         const data = JSON.parse(item);
         this.addToCard(data);
-        console.log(data);
+        this.orderProduct(data);
 
         const wiatForElement = setInterval(() => {
             this.prodetaiL = document.querySelector(".product-container");
@@ -60,7 +61,7 @@ class ProductDetailScript {
                         <p class="description">${data.description}</p>
                         <div class="actions">
                             <button class="add-to-cart" id="add-to-card">Add to Cart</button>
-                            <button class="order">
+                            <button class="order" id="order">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                 </svg> &nbsp; &nbsp;
@@ -77,6 +78,28 @@ class ProductDetailScript {
         });
     }
 
+    orderProduct(pro){
+        const html = setInterval(() => {
+            const order = document.getElementById("order");
+            const url = './view/shopping_cart.html';
+            const script = './scripts/shopping_cart.js';
+            const content = new ContentLoader();
+            const shopping = new ShoppingCardScript();
+            const l = JSON.stringify(pro);
+            if(order){
+                clearInterval(html);
+                
+                order.addEventListener('click', () => {
+                    console.log("clciked");
+                    console.log(pro);
+                    shopping.readAndWriteCard(l);
+                    shopping.shippingCardItem(1);
+                    content.loadContent(url, script);
+                });
+            }
+        }, 1000)
+    }
+
     addToCard(item) {
         const waitHmlElement = setInterval(() => {
             const addCard = document.querySelector("#add-to-card");
@@ -84,7 +107,6 @@ class ProductDetailScript {
             const message = document.getElementById("message");
             const shopping = new ShoppingCardScript();
             const m = new Menu();
-            var c = 0;
             var id = "";
 
             if (addCard) {
@@ -117,7 +139,7 @@ class ProductDetailScript {
                     }
                 });
             } else {
-                console.error('Element with ID "add-to-card" not found');
+                //console.error('Element with ID "add-to-card" not found');
             }
         });
 
