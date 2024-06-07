@@ -1,16 +1,3 @@
-function toggleMoreText() {
-    const moreText = document.getElementById("more-text");
-    const buttonText = document.getElementById("more-button");
-
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "block";
-        buttonText.textContent = "See Less";
-    } else {
-        moreText.style.display = "none";
-        buttonText.textContent = "See More";
-    }
-}
-
 function applyPromo() {
     const inputField = document.getElementById("promoInput");
     const promoCode = inputField.value.trim();

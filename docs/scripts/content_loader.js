@@ -28,6 +28,7 @@ class ContentLoader {
                             }
                         });
                     }
+                    this.attachMoreTextListener();
                 })
                 .catch(error => console.error('Error fetching content:', error));
             }
@@ -163,6 +164,25 @@ class ContentLoader {
             }
         }
         this.fetchData(this.startItem, this.endItem);
+    }
+    attachMoreTextListener() {
+        const moreButton = document.getElementById("more-button");
+        if (moreButton) {
+            moreButton.addEventListener('click', this.toggleMoreText);
+        }
+    }
+
+    toggleMoreText() {
+        const moreText = document.getElementById("more-text");
+        const buttonText = document.getElementById("more-button");
+
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+            moreText.style.display = "block";
+            buttonText.textContent = "See Less";
+        } else {
+            moreText.style.display = "none";
+            buttonText.textContent = "See More";
+        }
     }
 }
 
