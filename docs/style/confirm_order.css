@@ -1,42 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f2ed;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+    background-color: #EAE7D8;
 }
-
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 60%;
     max-width: 800px;
-}
-
-header {
-    margin-top: 100px;
-    text-align: left;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .logo {
     width: 150px;
 }
 
-h1 {
+.main{
+    width: 100%;
+}
+
+.main h1 {
     color: #4a362a;
 }
 
-main p {
+.main p {
     margin: 10px 0;
 }
 
 .order-details, .summary {
     margin: 20px 0;
+    min-width: 100%;
 }
 
 table {
@@ -55,6 +53,10 @@ th {
     color: #4a362a;
 }
 
+.items {
+    width: 100%;
+}
+
 .item {
     display: flex;
     align-items: center;
@@ -63,11 +65,12 @@ th {
     border-radius: 8px;
     padding: 10px;
     margin: 10px 0;
+    width: 100%;
 }
 
 .item-image {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .item-details {
@@ -91,6 +94,7 @@ footer {
     border-top: 1px solid #ddd;
     padding-top: 10px;
     color: #aaa;
+    width: 100%;
 }
 
 footer a {
@@ -113,4 +117,11 @@ footer a:hover {
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.done-button:hover {
+    background-color: #3a1e1d;
 }

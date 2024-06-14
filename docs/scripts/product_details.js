@@ -1,11 +1,13 @@
 import Menu from "./menu.js";
 import ShoppingCardScript from "./shopping_cart.js";
 import ContentLoader from "./content_loader.js";
+import { waitForElement } from "./app.js";
 
 class ProductDetailScript {
     constructor(prodetaiL) {
         this.prodetaiL = prodetaiL;
         this.isCounter = false;
+        
     }
 
     renderProductDetails(item) {
@@ -42,7 +44,7 @@ class ProductDetailScript {
                                 <div class="rating">
                                     ${'★'.repeat(data.rating)}${'☆'.repeat(5 - data.rating)}
                                 </div>
-                                <div class="price">${data.price}</div>
+                                <div class="price">$${data.price}</div>
                                 <div class="product-origin">Product from: <span>${data.product_from}</span></div>
                             </div>
                             <hr style="margin-inline-start: 10%; margin-inline-end: 10%;">
@@ -78,7 +80,7 @@ class ProductDetailScript {
         });
     }
 
-    orderProduct(pro){
+    orderProduct(pro) {
         const html = setInterval(() => {
             const order = document.getElementById("order");
             const url = './view/shopping_cart.html';
@@ -86,12 +88,10 @@ class ProductDetailScript {
             const content = new ContentLoader();
             const shopping = new ShoppingCardScript();
             const l = JSON.stringify(pro);
-            if(order){
+            if (order) {
                 clearInterval(html);
-                
+
                 order.addEventListener('click', () => {
-                    console.log("clciked");
-                    console.log(pro);
                     shopping.readAndWriteCard(l);
                     shopping.shippingCardItem(1);
                     content.loadContent(url, script);
@@ -173,6 +173,41 @@ class ProductDetailScript {
                     return alert.innerHTML = icon;
                 }
             }
+        });
+    }
+
+    getRandomItems(data, numItems) {
+        const shuffled = data.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, numItems);
+    }
+    
+    relatedProduct(data, content) {
+        waitForElement("#product-list", (element) => {
+            console.log(data);
+            let html = '';
+    
+            const randomItems = this.getRandomItems(data, 4);
+            const load = new ContentLoader();
+            randomItems.forEach(item => {
+                html += `
+                    <div class="product-item" id="card-product-${content}-${item.id}">
+                        <img src="${item.image}" alt="${item.product_name}">
+                        <div class="wapper-text">
+                            <p>${item.product_name}</p>
+                            <p>$ ${item.price}</p>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            load.loadProductDetail(randomItems, 0, 0, 1, content);
+            element.innerHTML = html;
+        });
+    }
+
+    getAddress(address){
+        waitForElement("#address", (element) => {
+            element.innerText = address;
         });
     }
 }

@@ -17,9 +17,9 @@ header {
 }
 
 header .logo {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: bold;
-    color: #6b10d3;
+    color: #fff;
 }
 
 header nav ul {
@@ -88,17 +88,15 @@ head #dropdown-men{
 .hero-text h1 {
     font-size: 48px;
     margin-bottom: 10px;
-    color: #3F2305;
 }
 
 .hero-text h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #3F2305;
 }
 
 .hero-text p {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -128,14 +126,10 @@ head #dropdown-men{
 .furniture-product h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #3F2305;
 }
 
 .furniture-product p {
-    font-size: 22px;
-    margin: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-size: 16px;
 }
 
 
@@ -206,7 +200,6 @@ border-bottom: 2px solid #5b3924;
 .text-container p {
     color: #7d7d7d;
     line-height: 1.6;
-    font-size: 22px;
 }
 
 .text-container h1 {
@@ -232,6 +225,37 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.categories-home {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.category-home {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.category-home img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.category-home h3 {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 footer {
     background-color: #151B26;

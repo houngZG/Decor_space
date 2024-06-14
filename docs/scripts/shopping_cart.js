@@ -1,3 +1,4 @@
+import { waitForElement } from "./app.js";
 import ContentLoader from "./content_loader.js";
 import Shipping from "./shipping.js";
 class ShoppingCardScript {
@@ -19,15 +20,12 @@ class ShoppingCardScript {
             console.log(prd.price);
             this.quantityChange(prd.price);
             this.checkOut(prd);
-            const elementWaiting = setInterval(() => {
+            waitForElement(".table", (element) => {
                 const text = document.getElementById("data-available");
-                const data = document.querySelector(".table");
                 const totalMoney = document.getElementById("total-money");
                 var productHTML = '';
 
-                if (data) {
-                    clearInterval(elementWaiting);
-
+                if (element) {
                     productHTML = `
                         <thead>
                             <tr>
@@ -69,7 +67,7 @@ class ShoppingCardScript {
                         </body>
                     `;
 
-                    data.innerHTML = productHTML;
+                    element.innerHTML = productHTML;
                     text.innerText = "Data is available.";
                     totalMoney.innerText = `$ ${prd.price}.00`;
                     text.style.color = "black";
@@ -77,21 +75,18 @@ class ShoppingCardScript {
                 } else {
                     // console.error(`element is ${data}`);
                 }
-            }, 500);
+            });
 
             this.loading = false;
         } catch (_) { }
     }
 
     quantityChange(price) {
-        const waitPriceElement = setInterval(() => {
-            const increase = document.getElementById("increase");
-            const decrease = document.getElementById("decrease");
-            const valueInput = document.getElementById("value-input");
+        waitForElement(["#increase", "#decrease", "#value-input"], (increase, decrease, valueInput) => {
             let number = 1;
 
-            if (valueInput && increase) {
-                clearInterval(waitPriceElement);
+            if (increase && decrease) {
+                this.updateTotal(price, number);
 
                 increase.addEventListener('click', async () => {
                     number++;
@@ -101,7 +96,6 @@ class ShoppingCardScript {
             }
 
             if (valueInput && decrease) {
-                clearInterval(waitPriceElement);
                 decrease.addEventListener('click', async () => {
                     if (number <= 1) {
                         valueInput.value = 1;
@@ -113,20 +107,17 @@ class ShoppingCardScript {
                     }
                 });
             }
-
-        }, 500);
+        });
     }
 
     removeProduct() {
-        const html = setInterval(() => {
-            const cancelProduct = document.getElementById("cancel-card");
+        waitForElement("#cancel-card", (cancelProduct) => {
             const data = document.querySelector(".table");
             const totalMoney = document.getElementById("total-money");
             const shipping = document.getElementById("items-count");
             const valueOfItem = document.getElementById("value-of-item");
 
             if (cancelProduct) {
-                clearInterval(html);
 
                 cancelProduct.addEventListener('click', () => {
                     data.innerHTML = "";
@@ -140,30 +131,27 @@ class ShoppingCardScript {
     }
 
     updateTotal(price, currentValue) {
-        const setTotalElement = setInterval(() => {
-            const total = document.getElementById("total");
+        waitForElement("#total", (total) => {
             const totalMoney = document.getElementById("total-money");
             const priceShipping = new Shipping();
             var t = 0;
+            var lastPrive = '';
             if (total && totalMoney) {
-                clearInterval(setTotalElement);
 
                 t = price * currentValue;
                 total.innerText = "$" + t;
                 totalMoney.innerText = `$ ${t === price ? price : t}.00`;
-                priceShipping.getTotalValue(t);
+                lastPrive = `$ ${t === price ? price : t}`;
+                priceShipping.getTotalValue(lastPrive);
             }
-        }, 500);
+        });
     }
 
     shippingCardItem(index) {
-        console.log(index);
-        const waitElemet = setInterval(() => {
-            const shipping = document.getElementById("items-count");
+        waitForElement("#items-count", (shipping) => {
             const valueOfItem = document.getElementById("value-of-item");
 
             if (shipping) {
-                clearInterval(waitElemet);
                 shipping.innerText = `Shopping card ${index} ${index > 1 ? 'items' : 'item'}`;
                 valueOfItem.innerText = `${index} ${index > 1 ? 'items' : 'item'}`;
             }
@@ -171,34 +159,48 @@ class ShoppingCardScript {
     }
 
     checkOut(product) {
-        const waitElement = setInterval(() => {
-            const checkOut = document.getElementById('check-out');
+        waitForElement("#check-out", (element) => {
             const contentLoader = new ContentLoader();
             const warning = document.getElementById("card");
             const mainWrpper = document.getElementById("main-wrpper");
             const loader = document.getElementById("loader");
             const cancel = document.getElementById("is-cancel");
+            var deliveryMethod = document.getElementById('delivery-method');
+            var errorMessage = document.getElementById('error-message');
             const url = './view/shipping.html';
             const scriptUrl = './scripts/shipping.js';
             const shiing = new Shipping();
 
-            if (checkOut) {
-                clearInterval(waitElement);
-                checkOut.addEventListener('click', () => {
+            if (element) {
+                element.addEventListener('click', () => {
+
+                    if (deliveryMethod.value === "") {
+                        return errorMessage.style.display = 'block';
+                    }
+
+                    if(deliveryMethod.value !== ""){
+                        shiing.shppingMethod(deliveryMethod.value);
+                    }
+
                     if (product !== "") {
+                        errorMessage.style.display = 'none';
                         loader.style.display = "block";
                         setTimeout(() => {
                             loader.style.display = "none";
                         }, 2000);
                         contentLoader.loadContent(url, scriptUrl);
                         shiing.summaryData(product);
-                    } else {
+                        return;
+                    }
+                    
+                    if (product === "") {
                         mainWrpper.style.display = "block";
                         loader.style.display = "block";
                         setTimeout(() => {
                             loader.style.display = "none";
                             warning.style.display = "block";
                         }, 2000)
+                        return;
                     }
                 });
             }
@@ -210,23 +212,20 @@ class ShoppingCardScript {
                     mainWrpper.style.display = "none";
                 });
             }
-        }, 300);
+        });
     }
 
     deliveryMethod() {
-        const html = setInterval(() => {
-            const method = document.getElementById("delivery-method");
-            const seletedValue = document.getElementById("selected-value");
-
+        waitForElement(["#delivery-method", "#selected-value"], (method, seletedValue) => {
+            const s = new Shipping();
             if (method && seletedValue) {
-                clearInterval(html);
 
                 method.addEventListener('change', function () {
                     var selected = this.value;
                     return seletedValue.innerText = selected;
                 });
             }
-        }, 300);
+        });
     }
 }
 

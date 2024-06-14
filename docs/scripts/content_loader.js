@@ -1,3 +1,4 @@
+import { waitForElement } from "./app.js";
 import ProductDetailScript from "./product_details.js";
 
 class ContentLoader {
@@ -8,31 +9,28 @@ class ContentLoader {
         this.endItem = 8;
     }
 
-
     loadContent(url, scriptUrl) {
-        const watingHTML = setInterval(() => {
-            const contentContainer = document.getElementById('content');
-            if(contentContainer){
-                clearInterval(watingHTML);
+        waitForElement("#content", (contentContainer) => {
+            if (contentContainer) {
 
                 fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    contentContainer.innerHTML = data;
-                    if (scriptUrl) {
-                        this.loadScript(scriptUrl, () => {
-                            if (url.includes('furniture.html')) {
-                                this.fetchData();
-                                this.clickTile();
-                                this.clickPage();
-                            }
-                        });
-                    }
-                    this.attachMoreTextListener();
-                })
-                .catch(error => console.error('Error fetching content:', error));
+                    .then(response => response.text())
+                    .then(data => {
+                        contentContainer.innerHTML = data;
+                        if (scriptUrl) {
+                            this.loadScript(scriptUrl, () => {
+                                if (url.includes('furniture.html')) {
+                                    this.fetchData();
+                                    this.clickTile();
+                                    this.clickPage();
+                                }
+                            });
+                        }
+                        this.attachMoreTextListener();
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
             }
-        }, 100);
+        });
     }
 
     loadScript(scriptUrl, callback) {
@@ -49,7 +47,7 @@ class ContentLoader {
             .then(response => response.json())
             .then(datas => {
                 const furnituresHTML = document.querySelector(".parent-card");
-
+                const d = new ProductDetailScript();
                 if (!furnituresHTML) {
                     console.error('Error: .parent-card element not found');
                     return;
@@ -57,8 +55,11 @@ class ContentLoader {
 
                 let getData = "";
                 const l = datas.data.furnitures;
+                const collection = datas.data.our_collects;
                 this.lengthData = l.length;
-                console.log(this.lengthData);
+                this.getNewCollection(l);
+                d.relatedProduct(l, "furnitures");
+                this.ourConllect(collection);
 
                 if (this.startItem < 0) {
                     this.startItem = 0;
@@ -71,7 +72,7 @@ class ContentLoader {
 
                 l.slice(start, end).forEach(item => {
                     getData += `
-                        <div class="card product-card" id="card-product-${item.id}">
+                        <div class="card product-card" id="card-product-furnitures-${item.id}">
                             <img class="card-img-top" src="${item.image}" alt="${item.product_name}" />
                             <div class="card-text name-card text-start p-1 p-sm-1 p-md-2 p-lg-3 p-xl-3 p-xxl-3">
                                 <ul class="list">
@@ -88,11 +89,59 @@ class ContentLoader {
                 furnituresHTML.innerHTML = getData;
 
                 //load data into products screen
-                this.loadProductDetail(l, start, end);
+                this.loadProductDetail(l, start, end, 0, "furnitures");
 
             })
             .catch(error => console.error("Error fetching data:", error));
     }
+
+    getNewCollection(data) {
+        waitForElement("#new-arrival", (element) => {
+            if (!Array.isArray(data)) {
+                console.error('Data is not an array:', data);
+                return;
+            }
+
+            let lastTwoItems = data.slice(-2);
+            var html = '';
+            lastTwoItems.forEach(items => {
+                html += `
+                    <div class="card me-lg-5 me-1 card-arrive-product">
+                        <img src="${items.image}" alt="${items.product_name}" />
+                        <div class="arrive-product">
+                            <p class="quote-card">
+                                Product Just Arrived. <br />
+                                Have in stock
+                            </p>
+                            <div class="wraper-text" id="card-product-furnitures-${items.id}">
+                                <p>New Arrived</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            this.loadProductDetail(lastTwoItems, 0, 0, 0, "furnitures");
+            element.innerHTML = html;
+        });
+    }
+
+    ourConllect(collects){
+        waitForElement("#collects", (element) => {
+            let html = '';
+
+            collects.slice(0, 8).forEach(item => {
+                html += `
+                    <div class="col-6 col-md-3 child-image" id="card-product-our_collects-${item.id}">
+                        <img src="${item.image}" alt="${item.product_name}">
+                    </div>
+                `;
+            });
+            this.loadProductDetail(collects, 0, 0, 0, "our_collects");
+            element.innerHTML = html;
+        });
+    }
+
+
 
     clickTile() {
         const tiles = document.querySelectorAll('.txt');
@@ -103,19 +152,57 @@ class ContentLoader {
         });
     }
 
-    loadProductDetail(products, start, end) {
-        products.slice(start, end).forEach(item => {
-            const cardProduct = document.getElementById(`card-product-${item.id}`);
-            cardProduct.addEventListener('click', function (event) {
-                event.preventDefault();
-                const url = './view/product_details.html';
-                const script = './scripts/product_details.js';
-                const json = JSON.stringify(item);
-                const data = new ProductDetailScript();
-                data.renderProductDetails(json);
-                this.loadContent(url, script);
-            }.bind(this));
-        });
+    loadProductDetail(products, start, end, isInFile, type) {
+        if (start === 0 && end !== 0 && isInFile === 0) {
+            products.slice(start, end).forEach(item => {
+                waitForElement("#card-product-"+ type + "-"+ item.id, (cardProduct) => {
+                    cardProduct.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const url = './view/product_details.html';
+                        const script = './scripts/product_details.js';
+                        const json = JSON.stringify(item);
+                        const data = new ProductDetailScript();
+                        data.renderProductDetails(json);
+                        this.loadContent(url, script);
+                    }.bind(this));
+                });
+            });
+
+            return;
+        }
+
+        if (start === 0 && end === 0 && isInFile === 0) {
+            products.forEach(item => {
+                waitForElement("#card-product-" + type + "-" + item.id, (cardProduct) => {
+                    cardProduct.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const url = './view/product_details.html';
+                        const script = './scripts/product_details.js';
+                        const json = JSON.stringify(item);
+                        const data = new ProductDetailScript();
+                        data.renderProductDetails(json);
+                        this.loadContent(url, script);
+                    }.bind(this));
+                });
+            });
+
+            return;
+        }
+
+        if (start === 0 && end === 0 && isInFile === 1) {
+            products.forEach(item => {
+                waitForElement("#card-product-" + type + "-" + item.id, (cardProduct) => {
+                    cardProduct.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const json = JSON.stringify(item);
+                        const data = new ProductDetailScript();
+                        data.renderProductDetails(json);
+                    }.bind(this));
+                });
+            });
+
+            return;
+        }
     }
 
     generateStars(rating) {
@@ -165,6 +252,7 @@ class ContentLoader {
         }
         this.fetchData(this.startItem, this.endItem);
     }
+
     attachMoreTextListener() {
         const moreButton = document.getElementById("more-button");
         if (moreButton) {
@@ -186,6 +274,7 @@ class ContentLoader {
     }
 }
 
+new ContentLoader();
 export default ContentLoader;
 
 

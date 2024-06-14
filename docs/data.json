@@ -30,7 +30,16 @@
                 "description": "Organize and Beautify Your Living Space with a Chairside Table with Drawers",
                 "rating": "4",
                 "created_at": "5/31/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "3",
@@ -41,7 +50,16 @@
                 "description": "The high-gloss drawer surface of the bedside table keeps the entire bedroom or room fresh and easier to clean. ",
                 "rating": "5",
                 "created_at": "5/31/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "4",
@@ -52,7 +70,16 @@
                 "description": "Transform Your Home with These Stunning Decor Ideas!",
                 "rating": "4",
                 "created_at": "5/31/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "5",
@@ -63,7 +90,16 @@
                 "description": "Buying Homary Furniture is a smart and easy decision. Shop quality furniture from sofa sets to faucets of all styles, delivered fast and shipping-free.",
                 "rating": "4",
                 "created_at": "5/31/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "6",
@@ -74,7 +110,16 @@
                 "description": "Mi-Mirror Rectangle Household Dressing Mirror",
                 "rating": "5",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "7",
@@ -85,7 +130,16 @@
                 "description": "A set of rattan chair complete with the cushion, paired with our most favorite rattan mirror and suar table will make your living room perfect.",
                 "rating": "4",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "8",
@@ -96,7 +150,16 @@
                 "description": "Urban Outfitters' Fall furniture collection is here, and it is complete with velvet sofas, rattan dressers, dainty vanities, and so much more.",
                 "rating": "4",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "9",
@@ -107,7 +170,16 @@
                 "description": "This stunning modern coat rack is crafted from rich walnut wood, offering both style and durability.",
                 "rating": "4",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "10",
@@ -118,7 +190,16 @@
                 "description": "This stunning modern coat rack is crafted from rich walnut wood, offering both style and durability.",
                 "rating": "4",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "11",
@@ -129,7 +210,16 @@
                 "description": "Explore a stunning range of dressers at Urban Outfitters. Find everything from compact to long dressers to suit your style and storage needs.",
                 "rating": "4",
                 "created_at": "6/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "12",
@@ -140,7 +230,16 @@
                 "description": "Amazon’s New Releases section is filled with space-saving furniture under $100.",
                 "rating": "4",
                 "created_at": "2/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "13",
@@ -151,7 +250,16 @@
                 "description": "It's easy to see why this £149.99 chair is stealing the limelight",
                 "rating": "4",
                 "created_at": "2/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "14",
@@ -162,7 +270,16 @@
                 "description": "Made on Order A variety of furniture is perfectly made to make you feel happy. ",
                 "rating": "4",
                 "created_at": "2/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "15",
@@ -173,89 +290,561 @@
                 "description": "Be amazed by the world of luxury detail in bedroom hotels.",
                 "rating": "4",
                 "created_at": "2/06/2024",
-                "product_type": "furniture"
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "16",
+                "image": "./assets/living_room/living4.jpg",
+                "price": "140",
+                "discount": "0%",
+                "product_name": "Bed",
+                "description": "Be amazed by the world of luxury detail in bedroom hotels.",
+                "rating": "4",
+                "created_at": "2/06/2024",
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "17",
+                "image": "./assets/living_room/living5.jpg",
+                "price": "140",
+                "discount": "0%",
+                "product_name": "Bed",
+                "description": "Be amazed by the world of luxury detail in bedroom hotels.",
+                "rating": "4",
+                "created_at": "2/06/2024",
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "18",
+                "image": "./assets/living_room/living6.jpg",
+                "price": "140",
+                "discount": "0%",
+                "product_name": "Bed",
+                "description": "Be amazed by the world of luxury detail in bedroom hotels.",
+                "rating": "4",
+                "created_at": "2/06/2024",
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "19",
+                "image": "./assets/living_room/living7.jpg",
+                "price": "140",
+                "discount": "0%",
+                "product_name": "Bed",
+                "description": "Be amazed by the world of luxury detail in bedroom hotels.",
+                "rating": "4",
+                "created_at": "2/06/2024",
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "20",
+                "image": "./assets/living_room/living18.jpg",
+                "price": "140",
+                "discount": "0%",
+                "product_name": "Bed",
+                "description": "Be amazed by the world of luxury detail in bedroom hotels.",
+                "rating": "4",
+                "created_at": "2/06/2024",
+                "product_type": "furniture",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             }
         ],
         "offices": [
             {
                 "id": "1",
                 "image": "./assets/offices/office1.jpg",
-                "price": "169$",
+                "price": "169",
                 "discount": "10%",
                 "product_name": "Home- Office-Furiture Set",
                 "description": "Best of Office-Furiture at home",
-                "rating": "5",
+                "rating": "3.5",
                 "created_at": "2024-06-06",
-                "product_type": "furniture"
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "2",
                 "image": "./assets/offices/office2.jpg",
-                "price": "400$",
+                "price": "400",
                 "discount": "5%",
                 "product_name": "Best Office-Furiture Set",
                 "description": "Office-Furiture at Company",
                 "rating": "5",
                 "created_at": "2024-04-06",
-                "product_type": "furniture"
+                "product_type": "offices",
+                "colors": [
+                    "black",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
             },
             {
                 "id": "3",
                 "image": "./assets/offices/office3.jpg",
-                "price": "299$",
+                "price": "299",
                 "discount": "15%",
                 "product_name": "Brown Office-Furiture Set",
                 "description": "Office-Furiture at Company and love color Brown",
                 "rating": "5",
                 "created_at": "2024-05-06",
-                "product_type": "furniture"
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "yellow",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             },
             {
                 "id": "4",
                 "image": "./assets/offices/office4.jpg",
-                "price": "499$",
+                "price": "499",
                 "discount": "10%",
                 "product_name": "Team Office-Furiture Set",
                 "description": "Office-Furiture at Company and worke with Team",
                 "rating": "4.5",
                 "created_at": "2024-01-06",
-                "product_type": "furniture"
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "brown",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
             },
             {
                 "id": "5",
                 "image": "./assets/offices/office5.jpg",
-                "price": "799$",
+                "price": "799",
                 "discount": "0%",
                 "product_name": "CEO Office-Furiture Set",
                 "description": "CEO table Office-Furiture at Company ",
                 "rating": "5",
                 "created_at": "2023-05-06",
-                "product_type": "furniture"
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "gray"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {  
+                "id": "6",
+                "image": "./assets/offices/office6.jpg",
+                "price": "169",
+                "discount": "10%",
+                "product_name": "Office items",
+                "description": "Best of Office-Furiture at home",
+                "rating": "3.5",
+                "created_at": "2024-06-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "7",
+                "image": "./assets/offices/office7.jpg",
+                "price": "400",
+                "discount": "5%",
+                "product_name": "Best Office-Furiture Set",
+                "description": "Office-Furiture at Company",
+                "rating": "5",
+                "created_at": "2024-04-06",
+                "product_type": "offices",
+                "colors": [
+                    "black",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
+            },
+            {
+                "id": "8",
+                "image": "./assets/offices/office8.jpg",
+                "price": "299",
+                "discount": "15%",
+                "product_name": "Brown Office-Furiture Set",
+                "description": "Office-Furiture at Company and love color Brown",
+                "rating": "5",
+                "created_at": "2024-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "yellow",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "9",
+                "image": "./assets/offices/office9.jpg",
+                "price": "499",
+                "discount": "10%",
+                "product_name": "Team Office-Furiture Set",
+                "description": "Office-Furiture at Company and worke with Team",
+                "rating": "4.5",
+                "created_at": "2024-01-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "brown",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "10",
+                "image": "./assets/offices/office10.jpg",
+                "price": "799",
+                "discount": "0%",
+                "product_name": "CEO Office-Furiture Set",
+                "description": "CEO table Office-Furiture at Company ",
+                "rating": "5",
+                "created_at": "2023-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "gray"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "11",
+                "image": "./assets/offices/office11.jpg",
+                "price": "169",
+                "discount": "10%",
+                "product_name": "Home- Office-Furiture Set",
+                "description": "Best of Office-Furiture at home",
+                "rating": "3.5",
+                "created_at": "2024-06-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "12",
+                "image": "./assets/offices/office12.jpg",
+                "price": "400",
+                "discount": "5%",
+                "product_name": "Best Office-Furiture Set",
+                "description": "Office-Furiture at Company",
+                "rating": "5",
+                "created_at": "2024-04-06",
+                "product_type": "offices",
+                "colors": [
+                    "black",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
+            },
+            {
+                "id": "13",
+                "image": "./assets/offices/office13.jpg",
+                "price": "299",
+                "discount": "15%",
+                "product_name": "Brown Office-Furiture Set",
+                "description": "Office-Furiture at Company and love color Brown",
+                "rating": "5",
+                "created_at": "2024-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "yellow",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "14",
+                "image": "./assets/offices/office14.jpg",
+                "price": "499",
+                "discount": "10%",
+                "product_name": "Team Office-Furiture Set",
+                "description": "Office-Furiture at Company and worke with Team",
+                "rating": "4.5",
+                "created_at": "2024-01-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "brown",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "15",
+                "image": "./assets/offices/office15.jpg",
+                "price": "799",
+                "discount": "0%",
+                "product_name": "CEO Office-Furiture Set",
+                "description": "CEO table Office-Furiture at Company ",
+                "rating": "5",
+                "created_at": "2023-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "gray"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {   
+                "id": "16",
+                "image": "./assets/offices/office16.jpg",
+                "price": "169",
+                "discount": "10%",
+                "product_name": "Home- Office-Furiture Set",
+                "description": "Best of Office-Furiture at home",
+                "rating": "3.5",
+                "created_at": "2024-06-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            
+            },
+            {
+                "id": "17",
+                "image": "./assets/offices/office17.jpg",
+                "price": "400",
+                "discount": "5%",
+                "product_name": "Best Office-Furiture Set",
+                "description": "Office-Furiture at Company",
+                "rating": "5",
+                "created_at": "2024-04-06",
+                "product_type": "offices",
+                "colors": [
+                    "black",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
+            },
+            {
+                "id": "18",
+                "image": "./assets/offices/office18.jpg",
+                "price": "299",
+                "discount": "15%",
+                "product_name": "Brown Office-Furiture Set",
+                "description": "Office-Furiture at Company and love color Brown",
+                "rating": "5",
+                "created_at": "2024-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "yellow",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "19",
+                "image": "./assets/offices/office19.jpg",
+                "price": "499",
+                "discount": "10%",
+                "product_name": "Team Office-Furiture Set",
+                "description": "Office-Furiture at Company and worke with Team",
+                "rating": "4.5",
+                "created_at": "2024-01-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "brown",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "20",
+                "image": "./assets/offices/office20.jpg",
+                "price": "799",
+                "discount": "0%",
+                "product_name": "CEO Office-Furiture Set",
+                "description": "CEO table Office-Furiture at Company ",
+                "rating": "5",
+                "created_at": "2023-05-06",
+                "product_type": "offices",
+                "colors": [
+                    "red",
+                    "blue",
+                    "gray"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
             }
         ],
         "kitchens": [
             {
                 "id": "1",
                 "image": "./assets/kitchens/kitchens1.jpg",
-                "price": "599$",
+                "price": "599",
                 "discount": "10%",
                 "product_name": "Modular kitchens interior",
                 "description": "Best of kitchens in small house",
                 "rating": "4",
                 "created_at": "2023-01-12",
-                "product_type": "furniture"
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "black",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
             },
-
             {
                 "id": "2",
                 "image": "./assets/kitchens/kitchens2.jpg",
-                "price": "999$",
+                "price": "999",
                 "discount": "10%",
                 "product_name": "Modular kitchens interior",
                 "description": "Best of kitchens in Condo",
                 "rating": "4",
                 "created_at": "2023-05-12",
-                "product_type": "furniture"
+                "product_type": "kitchens",
+                "colors": [
+                    "white",
+                    "blue",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Singapor"
             },
             {
                 "id": "3",
@@ -266,30 +855,1161 @@
                 "description": "Best of kitchens in Bigger house",
                 "rating": "5",
                 "created_at": "2023-08-12",
-                "product_type": "furniture"
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "white"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
             },
             {
                 "id": "4",
                 "image": "./assets/kitchens/kitchens4.jpg",
-                "price": "1599$",
+                "price": "1299",
                 "discount": "10%",
                 "product_name": "VIP black kitchens interior",
                 "description": "Best of kitchens in Bigger house and use ",
                 "rating": "4",
                 "created_at": "2023-09-12",
-                "product_type": "furniture"
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
             },
             {
                 "id": "5",
                 "image": "./assets/kitchens/kitchens5.jpg",
-                "price": "1999$",
+                "price": "1999",
                 "discount": "0%",
                 "product_name": "VVIP  kitchens interior",
-                "description": "Best of kitchens in Bigger house and hove four member",
+                "description": "Best of kitchens in Bigger house and have four member",
                 "rating": "5",
                 "created_at": "2023-08-12",
-                "product_type": "furniture"
-            }   
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "6",
+                "image": "./assets/kitchens/kitchens6.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "7",
+                "image": "./assets/kitchens/kitchens7.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "8",
+                "image": "./assets/kitchens/kitchens8.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "9",
+                "image": "./assets/kitchens/kitchens9.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "10",
+                "image": "./assets/kitchens/kitchens10.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "11",
+                "image": "./assets/kitchens/kitchens11.jpg",
+                "price": "1199$",
+                "discount": "0%",
+                "product_name": "VIP Modular kitchens interior",
+                "description": "Best of kitchens in Bigger house",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "white"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "USA"
+            },
+            {
+                "id": "12",
+                "image": "./assets/kitchens/kitchens12.jpg",
+                "price": "1299",
+                "discount": "10%",
+                "product_name": "VIP black kitchens interior",
+                "description": "Best of kitchens in Bigger house and use ",
+                "rating": "4",
+                "created_at": "2023-09-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "13",
+                "image": "./assets/kitchens/kitchens13.jpg",
+                "price": "1299",
+                "discount": "10%",
+                "product_name": "VIP black kitchens interior",
+                "description": "Best of kitchens in Bigger house and use ",
+                "rating": "4",
+                "created_at": "2023-09-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "14",
+                "image": "./assets/kitchens/kitchens14.jpg",
+                "price": "1299",
+                "discount": "10%",
+                "product_name": "VIP black kitchens interior",
+                "description": "Best of kitchens in Bigger house and use ",
+                "rating": "4",
+                "created_at": "2023-09-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "15",
+                "image": "./assets/kitchens/kitchens15.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "16",
+                "image": "./assets/kitchens/kitchens16.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "17",
+                "image": "./assets/kitchens/kitchens17.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "18",
+                "image": "./assets/kitchens/kitchens18.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "19",
+                "image": "./assets/kitchens/kitchens19.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "20",
+                "image": "./assets/kitchens/kitchens20.jpg",
+                "price": "1999",
+                "discount": "0%",
+                "product_name": "VVIP  kitchens interior",
+                "description": "Best of kitchens in Bigger house and have four member",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "kitchens",
+                "colors": [
+                    "red",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            }
+        ],
+        "livingrooms": [
+            {
+                "id": "1",
+                "image": "./assets/living_room/living1.jpg",
+                "price": "599",
+                "discount": "10%",
+                "product_name": "White Table LivingRoom like White House..",
+                "description": "Best of Livingroom in Bigger house and Small Family.",
+                "rating": "5",
+                "created_at": "2023-08-12",
+                "product_type": "living room",
+                "colors": [
+                    "white",
+                    "white",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "2",
+                "image": "./assets/living_room/living2.jpg",
+                "price": "499",
+                "discount": "10%",
+                "product_name": "Swaq Table LivingRoom like White House..",
+                "description": "Best of Livingroom in Bigger house and Small Family.",
+                "rating": "5",
+                "created_at": "2023-05-10",
+                "product_type": "living room",
+                "colors": [
+                    "white",
+                    "green",
+                    "brown"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "3",
+                "image": "./assets/living_room/living3.jpg",
+                "price": "299",
+                "discount": "0%",
+                "product_name": "Small Table LivingRoom ",
+                "description": "Best of Livingroom in Bigger house and Small Family.",
+                "rating": "3",
+                "created_at": "2023-05-10",
+                "product_type": "living room",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "4",
+                "image": "./assets/living_room/living4.jpg",
+                "price": "499",
+                "discount": "10%",
+                "product_name": "Black light Table LivingRoom",
+                "description": "Best of Livingroom like black house background",
+                "rating": "3",
+                "created_at": "2023-05-10",
+                "product_type": "living room",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Thailand"
+            },
+            {
+                "id": "5",
+                "image": "./assets/living_room/living5.jpg",
+                "price": "999",
+                "discount": "20%",
+                "product_name": "Long Table",
+                "description": "table use from sofe small and white sofe.",
+                "rating": "4",
+                "created_at": "2023-09-10",
+                "product_type": "living room",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "6",
+                "image": "./assets/living_room/living6.jpg",
+                "price": "250",
+                "discount": "5%",
+                "product_name": "Modern Wall Art",
+                "description": "A beautiful piece of modern art for your living room wall.",
+                "rating": "4.9",
+                "created_at": "2023-06-10",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "7",
+                "image": "./assets/living_room/living7.jpg",
+                "price": "450",
+                "discount": "12%",
+                "product_name": "Comfortable Armchair",
+                "description": "A cozy armchair perfect for relaxing.",
+                "rating": "4.5",
+                "created_at": "2023-07-08",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "8",
+                "image": "./assets/living_room/living8.jpg",
+                "price": "300",
+                "discount": "8%",
+                "product_name": "Glass Coffee Table",
+                "description": "A stylish glass coffee table with a modern design.",
+                "rating": "4.6",
+                "created_at": "2023-08-15",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "9",
+                "image": "./assets/living_room/living9.jpg",
+                "price": "$1200",
+                "discount": "10%",
+                "product_name": "Sectional Sofa",
+                "description": "A spacious sectional sofa for larger living rooms.",
+                "rating": "4.7",
+                "created_at": "2023-09-20",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "10",
+                "image": "./assets/living_room/living10.jpg",
+                "price": "250",
+                "discount": "15%",
+                "product_name": "Stylish Bookshelf",
+                "description": "A modern bookshelf with plenty of storage.",
+                "rating": "4.8",
+                "created_at": "2023-10-05",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "11",
+                "image": "./assets/living_room/living11.jpg",
+                "price": "700",
+                "discount": "10%",
+                "product_name": "Leather Sofa",
+                "description": "A luxurious leather sofa for a premium look.",
+                "rating": "4.5",
+                "created_at": "2023-11-12",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "12",
+                "image": "./assets/living_room/living12.jpg",
+                "price": "150",
+                "discount": "20%",
+                "product_name": "Vintage End Table",
+                "description": "A charming vintage end table with a classic design.",
+                "rating": "4.7",
+                "created_at": "2023-12-01",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "13",
+                "image": "./assets/living_room/living13.jpg",
+                "price": "350",
+                "discount": "15%",
+                "product_name": "Cozy Loveseat",
+                "description": "A small loveseat perfect for compact spaces.",
+                "rating": "4.6",
+                "created_at": "2024-01-05",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "14",
+                "image": "./assets/living_room/living14.jpg",
+                "price": "200",
+                "discount": "10%",
+                "product_name": "Designer Rug",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "4.8",
+                "created_at": "2024-01-18",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "15",
+                "image": "./assets/living_room/living15.jpg",
+                "price": "450",
+                "discount": "12%",
+                "product_name": "Elegant Armchair",
+                "description": "An elegant armchair with a classic design.",
+                "rating": "4.5",
+                "created_at": "2024-02-10",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "16",
+                "image": "./assets/living_room/living16.jpg",
+                "price": "250",
+                "discount": "8%",
+                "product_name": "Modern Coffee Tamble",
+                "description": "A stylish coffee table with a contemporary look.",
+                "rating": "4.6",
+                "created_at": "2024-02-25",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "17",
+                "image": "./assets/living_room/living17.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Classic Bookshelf",
+                "description": "A classic bookshelf with plenty of space for your collection.",
+                "rating": "4.7",
+                "created_at": "2024-03-15",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "18",
+                "image": "./assets/living_room/living18.jpg",
+                "price": "250",
+                "discount": "20%",
+                "product_name": "Chic Floor Lamp",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "4.8",
+                "created_at": "2024-04-02",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "19",
+                "image": "./assets/living_room/living19.jpg",
+                "price": "800",
+                "discount": "15%",
+                "product_name": "Comfortable Sofa Set",
+                "description": "A comfortable sofa set perfect for family gatherings.",
+                "rating": "4.5",
+                "created_at": "2024-04-20",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "20",
+                "image": "./assets/living_room/living20.jpg",
+                "price": "270",
+                "discount": "10%",
+                "product_name": "Modern Wall Shelf",
+                "description": "A modern wall shelf for displaying your favorite items.",
+                "rating": "4.6",
+                "created_at": "2024-05-05",
+                "product_type": "furniture",
+                "colors": [
+                    "white",
+                    "green",
+                    "black"
+                ],
+                "width": "39",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Japanese"
+            }
+        ],
+        "our_collects":[
+            {
+                "id": "1",
+                "image": "./assets/collects/collects1.jpg",
+                "price": "359",
+                "discount": "5%",
+                "product_name": "Black Tap",
+                "description": "Use from 4 Member and Hight Quality.",
+                "rating": "4",
+                "created_at": "2023/11/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "2",
+                "product_from": "China"
+            },
+            {
+                "id": "2",
+                "image": "./assets/collects/collects2.jpg",
+                "price": "459",
+                "discount": "5%",
+                "product_name": "White max",
+                "description": "A comfortable sofa set perfect for family gatherings.",
+                "rating": "4",
+                "created_at": "2023/12/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "3",
+                "image": "./assets/collects/collects3.jpg",
+                "price": "159",
+                "discount": "4%",
+                "product_name": "Lamp Swiq",
+                "description": "A comfortable sofa set perfect for family gatherings.",
+                "rating": "5",
+                "created_at": "2023/08/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "4",
+                "image": "./assets/collects/collects4.jpg",
+                "price": "259",
+                "discount": "10%",
+                "product_name": "One Table II Option",
+                "description": "An elegant armchair with a classic design.",
+                "rating": "5",
+                "created_at": "2023/02/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "5",
+                "image": "./assets/collects/collects5.jpg",
+                "price": "650",
+                "discount": "10%",
+                "product_name": "Cabinet",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "6",
+                "image": "./assets/offices/office12.jpg",
+                "price": "650",
+                "discount": "10%",
+                "product_name": "Wall mounted",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "7",
+                "image": "./assets/offices/office5.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Mirror mounted",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "100",
+                "height": "100",
+                "warranty": "2",
+                "product_from": "China"
+            },
+            {
+                "id": "8",
+                "image": "./assets/offices/office20.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "9",
+                "image": "./assets/furnitures/item-11.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "10",
+                "image": "./assets/furnitures/item-12.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "11",
+                "image": "./assets/furnitures/item-14.jpg",
+                "price": "359",
+                "discount": "5%",
+                "product_name": "Black Tap",
+                "description": "Use from 4 Member and Hight Quality.",
+                "rating": "4",
+                "created_at": "2023/11/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "2",
+                "product_from": "China"
+            },
+            {
+                "id": "12",
+                "image": "./assets/collects/collects2.jpg",
+                "price": "459",
+                "discount": "5%",
+                "product_name": "White max",
+                "description": "A comfortable sofa set perfect for family gatherings.",
+                "rating": "4",
+                "created_at": "2023/12/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "13",
+                "image": "./assets/living_room/living19.jpg",
+                "price": "159",
+                "discount": "4%",
+                "product_name": "Lamp Swiq",
+                "description": "A comfortable sofa set perfect for family gatherings.",
+                "rating": "5",
+                "created_at": "2023/08/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "blue"
+                ],
+                "width": "40",
+                "height": "50",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "14",
+                "image": "./assets/living_room/living18.jpg",
+                "price": "259",
+                "discount": "10%",
+                "product_name": "One Table II Option",
+                "description": "An elegant armchair with a classic design.",
+                "rating": "5",
+                "created_at": "2023/02/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "Japanese"
+            },
+            {
+                "id": "15",
+                "image": "./assets/living_room/living2.jpg",
+                "price": "650",
+                "discount": "10%",
+                "product_name": "Cabinet",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "16",
+                "image": "./assets/furnitures/item-16.jpg",
+                "price": "650",
+                "discount": "10%",
+                "product_name": "Wall mounted",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "40",
+                "height": "100",
+                "warranty": "1",
+                "product_from": "China"
+            },
+            {
+                "id": "17",
+                "image": "./assets/kitchens/kitchens9.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Mirror mounted",
+                "description": "A beautiful rug to enhance your living room decor.",
+                "rating": "5",
+                "created_at": "2023/01/11",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "100",
+                "height": "100",
+                "warranty": "2",
+                "product_from": "China"
+            },
+            {
+                "id": "18",
+                "image": "./assets/offices/office18.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "19",
+                "image": "./assets/offices/office5.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            },
+            {
+                "id": "20",
+                "image": "./assets/offices/office3.jpg",
+                "price": "150",
+                "discount": "10%",
+                "product_name": "Decoration Glass",
+                "description": "A chic floor lamp to add style to your living room.",
+                "rating": "5",
+                "created_at": "2023/02/10",
+                "product_type": "Collects",
+                "colors": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "width": "30",
+                "height": "30",
+                "warranty": "1",
+                "product_from": "Cambodia"
+            }
         ]
     }
 }

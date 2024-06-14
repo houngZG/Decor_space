@@ -1,69 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shipping Information</title>
-    <link rel="stylesheet" href="./style/shipping.css">
-</head>
-<body>
-    <div class="container-fluid d-flex justify-content-center align-content-center p-5">
-        <div class="shipping-form">
-            <h1>Shipping</h1>
-            <form>
-                <div class="input-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="Enter Your First Name">
+    <link rel="stylesheet" href="./style/shipping.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-content-center p-5"
+    >
+      <div class="shipping-form">
+        <h1>Shipping</h1>
+        <form>
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter Your First Name"
+            />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter Your Last Name"
+            />
+          </div>
+          <div class="input-group">
+            <label for="destination">Destination/Region</label>
+            <div class="select-wrapper">
+              <img src="./assets/flag/Cambodia_flag.png" alt="Cambodia Flag" />
+              <select id="destination">
+                <option value="Cambodia (Riel)">Cambodia (Riel)</option>
+                <option value="United state (dollar)">
+                  United state (dollar)
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Cambodia, Phnom Penh A143 Streets"
+            />
+          </div>
+          <div class="input-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Phnom Penh" />
+          </div>
+          <div class="input-group">
+            <label for="postal-code">Postal or Zip Code</label>
+            <input
+              type="number"
+              id="postal-code"
+              placeholder="Enter Your Postal Code"
+            />
+          </div>
+          <div class="input-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" placeholder="Phone number" />
+          </div>
+        </form>
+      </div>
+      <div class="order-summary">
+        <h1>Summary</h1>
+        <div id="order-summary">
+          <div class="summary-item">
+            <img src="./assets/images/black_chair.png" alt="Black Chair" />
+            <div class="item-details">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="total-cost">
+          <p>SHIPPING</p>
+          <p id="shipping">$0.00</p>
+        </div>
+        <div class="total-cost">
+          <p>TOTAL COST</p>
+          <p id="total-price">$0.00</p>
+        </div>
+        <button class="pay-button" id="pay-btn">PAY</button>
+        <div class="mt-3" id="error-message" style="color: red; display: none">
+          Please fill in all the blank
+        </div>
+      </div>
+
+      <div class="main" id="main">
+        <div class="notifications-container" id="notifications">
+            <div class="success">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  
+                  <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
                 </div>
-                <div class="input-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Enter Your Last Name">
-                </div>
-                <div class="input-group">
-                    <label for="destination">Destination/Region</label>
-                    <div class="select-wrapper">
-                        <img src="./assets/flag/Cambodia_flag.png" alt="Cambodia Flag">
-                        <select id="destination">
-                            <option value="cambodia">Cambodia (Riel)</option>
-                            <option value="cambodia">United state (dollar)</option>
-                        </select>
+                <div class="success-prompt-wrap">
+                  <p class="success-prompt-heading">Order completed
+                  </p><div class="success-prompt-prompt">
+                    <p>You're happy now? Does this impulsive action is really going to satisfy you? Don't answer me, answer yourself. Anyway, your party-size pizza combo is on it's way.</p>
+                  </div>
+                    <div class="success-button-container">
+                      <button type="button" class="success-button-main">View status</button>
+                      <button type="button" class="success-button-secondary">Dismiss</button>
                     </div>
                 </div>
-                <div class="input-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" placeholder="Cambodia, Phnom Penh A143 Streets">
-                </div>
-                <div class="input-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city" placeholder="Phnom Penh">
-                </div>
-                <div class="input-group">
-                    <label for="postal-code">Postal or Zip Code</label>
-                    <input type="text" id="postal-code" placeholder="Enter Your Postal Code">
-                </div>
-                <div class="input-group">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" id="phone-number" placeholder="Phone number">
-                </div>
-            </form>
-        </div>
-        <div class="order-summary">
-            <h1>Summary</h1>
-            <div id="order-summary">
-                <div class="summary-item">
-                    <img src="./assets/images/black_chair.png" alt="Black Chair">
-                    <div class="item-details">
-                        <p>x 1 Black Chair</p>
-                        <p>$15.00</p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="total-cost">
-                <p>TOTAL COST</p>
-                <p id="total-price">$0.00</p>
-            </div>
-            <button class="pay-button">PAY</button>
-        </div>
+          </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
